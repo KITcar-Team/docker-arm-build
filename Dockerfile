@@ -5,3 +5,6 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
     git-core gcc-arm-none-eabi gdb-arm-none-eabi libnewlib-arm-none-eabi can-utils libusb-1.0-0-dev cmake \
     openocd sudo python python-serial protobuf-compiler libprotobuf-dev python-protobuf
 
+# software to compile Arduino code
+RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
+    build-essential gcc-avr avr-libc
