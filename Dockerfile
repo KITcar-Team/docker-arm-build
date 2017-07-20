@@ -7,4 +7,4 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
 
 # software to compile Arduino code
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    build-essential gcc-avr avr-libc
+    build-essential gcc-avr avr-libc doxygen graphviz
