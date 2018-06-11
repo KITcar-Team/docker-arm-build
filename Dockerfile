@@ -1,5 +1,5 @@
-FROM ubuntu:latest
-MAINTAINER Johannes Bleier <johannes.bleier@student.kit.edu>
+FROM ubuntu:16.04
+LABEL name=docker-arm-build version=latesLABEL name=docker-arm-build version=latest
 
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
     git-core gcc-arm-none-eabi gdb-arm-none-eabi libnewlib-arm-none-eabi can-utils libusb-1.0-0-dev cmake \
