@@ -1,5 +1,5 @@
 # docker-arm-build
-Docker image with all dependencies to build the kitcar-bus-system repository
+Docker container with all dependencies to build the code for KITcar's ARM based microcontroller boards
 
 ## Build Docker Image
 Build the docker image with:
