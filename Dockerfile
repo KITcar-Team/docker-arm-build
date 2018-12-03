@@ -6,6 +6,7 @@ RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-g
     openocd sudo python python-serial protobuf-compiler libprotobuf-dev python-protobuf
 
 RUN add-apt-repository ppa:team-gcc-arm-embedded/ppa
+
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get -y install gcc-arm-embedded
 
 # software to compile Arduino code
